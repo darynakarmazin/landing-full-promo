@@ -28,6 +28,7 @@ body {
   margin: 0;
   background-color: var(--main-background-color, #181818);
   color: var(--main-font-color, #ffffff);
+  font-family: "SF UI Display", sans-serif;
 }
 
 code {
@@ -87,14 +88,86 @@ img {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 375px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 25px;
   }
 }
 
 @media screen and (min-width: 425px) {
   .container {
-    width: 425px;
+    max-width: 425px;
   }
+}
+
+.section {
+  height: 100vh;
+}
+
+.button {
+  width: 200px;
+  height: 55px;
+  padding: 20px 50px;
+  background-color: var(--accent-color);
+  color: var(--main-font-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: 1.3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--main-font-color);
+  color: var(--accent-color);
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  padding: 15px;
+}
+
+/* Hero section */
+.hero-section {
+  background-image: url(./images/people-in-swimsuits.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 200px 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url(./images/people-in-swimsuits@x2.png);
+  }
+}
+
+.hero-menu-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.hero-scroll-btn {
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+
+.hero-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.23;
 }
