@@ -203,7 +203,7 @@ img {
 .offline-section {
   background-image: url(./images/a-man-in-a-suit.png);
   background-repeat: no-repeat;
-  background-position: 0 center;
+  background-position: center bottom;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -296,4 +296,38 @@ img {
   line-height: 1.18;
   letter-spacing: 1.3px;
   text-transform: uppercase;
+}
+
+/* Presents section */
+.presents-section {
+  background-image: url(./images/partner-logos.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  position: relative;
+  padding: 92px 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .presents-section {
+    background-image: url(./images/partner-logos@x2.png);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .presents-container {
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+}
+
+.presents-title {
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 15px;
+}
+
+.presents-description {
+  font-size: 15px;
+  line-height: 1.33;
 }
