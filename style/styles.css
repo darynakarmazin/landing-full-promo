@@ -12,8 +12,8 @@ html {
   --main-background-color: #101010;
   --gradient-background-color: linear-gradient(
     180deg,
-    rgba(16, 16, 16, 0) 37.452%,
-    rgb(16, 16, 16) 90.541%
+    rgba(0, 0, 0, 0),
+    rgb(0, 0, 0) 100%
   );
 
   /* Animation */
@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--main-background-color, #181818);
+  background-color: var(--main-background-color, #101010);
   color: var(--main-font-color, #ffffff);
   font-family: "SF UI Display", sans-serif;
 }
@@ -80,8 +80,8 @@ img {
 .container {
   width: 100%;
   min-width: 320px;
-  padding-left: 22.5px;
-  padding-right: 22.5px;
+  padding-left: 30px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -101,6 +101,23 @@ img {
 
 .section {
   height: 100vh;
+  position: relative;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.desription {
+  opacity: 0.8;
+}
+
+.text {
+  max-width: 240px;
 }
 
 .button {
@@ -117,6 +134,7 @@ img {
   letter-spacing: 1.3px;
   text-align: center;
   text-transform: uppercase;
+  transition: var(--transition-dur-and-func);
 }
 
 .button:hover,
@@ -129,6 +147,17 @@ img {
   background: none;
   border: none;
   padding: 15px;
+  z-index: 100;
+}
+
+.gradient {
+  height: 50%;
+  width: 100%;
+  background-image: var(--gradient-background-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Hero section */
@@ -137,7 +166,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
   padding: 200px 0;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -162,7 +190,6 @@ img {
 
 .hero-title {
   font-size: 30px;
-  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 10px;
 }
@@ -170,4 +197,103 @@ img {
 .hero-description {
   font-size: 16px;
   line-height: 1.23;
+}
+
+/* Offline section */
+.offline-section {
+  background-image: url(./images/a-man-in-a-suit.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .offline-section {
+    background-image: url(./images/a-man-in-a-suit@x2.png);
+  }
+}
+
+.offline-title {
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 15px;
+}
+
+.offline-description {
+  font-size: 15px;
+  line-height: 1.33;
+}
+
+/* Tariff section */
+.tariff-section {
+  background-image: var(--gradient-background-color),
+    url(./images/movie-posters.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 36px 0;
+  border: 8px solid var(--accent-color);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .tariff-section {
+    background-image: var(--gradient-background-color),
+      url(./images/movie-posters@x2.png);
+  }
+}
+
+.tariff-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.tariff-name {
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 109px;
+}
+
+.tariff-amount {
+  font-size: 36px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+.tariff-text {
+  margin-bottom: 40px;
+}
+
+.tariff-sum {
+  display: block;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.tariff-btn {
+  margin-bottom: 10px;
+}
+
+.tariff-tariff {
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.83px;
+  max-width: 157px;
+  margin-bottom: 20px;
+}
+
+.tariff-link {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
 }
