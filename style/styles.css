@@ -11,8 +11,9 @@ html {
   /* Background colors */
   --main-background-color: #101010;
   --gradient-background-color: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0),
+    to bottom,
+    transparent 50%,
+    rgba(0, 0, 0, 0) 50%,
     rgb(0, 0, 0) 100%
   );
 
@@ -150,16 +151,6 @@ img {
   z-index: 100;
 }
 
-.gradient {
-  height: 50%;
-  width: 100%;
-  background-image: var(--gradient-background-color);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 /* Hero section */
 .hero-section {
   background-image: url(./images/people-in-swimsuits.png);
@@ -201,7 +192,8 @@ img {
 
 /* Offline section */
 .offline-section {
-  background-image: url(./images/a-man-in-a-suit.png);
+  background-image: var(--gradient-background-color),
+    url(./images/a-man-in-a-suit.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -210,7 +202,8 @@ img {
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi) {
   .offline-section {
-    background-image: url(./images/a-man-in-a-suit@x2.png);
+    background-image: var(--gradient-background-color),
+      url(./images/a-man-in-a-suit@x2.png);
   }
 }
 
@@ -235,6 +228,7 @@ img {
   padding: 36px 0;
   border: 8px solid var(--accent-color);
 }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi) {
   .tariff-section {
@@ -298,7 +292,8 @@ img {
 
 /* Presents section */
 .presents-section {
-  background-image: url(./images/partner-logos.png);
+  background-image: var(--gradient-background-color),
+    url(./images/partner-logos.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
@@ -307,7 +302,8 @@ img {
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi) {
   .presents-section {
-    background-image: url(./images/partner-logos@x2.png);
+    background-image: var(--gradient-background-color),
+      url(./images/partner-logos@x2.png);
   }
 }
 
