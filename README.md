@@ -2,9 +2,18 @@
 
 Необхідно створити сторінку лендінгу згідно дизайну
 https://www.figma.com/file/0geHsFE4D2aqKhpQdI6UCa/%D0%A2%D0%97?node-id=0%3A1
-
 Платформа: web mobile
-Середній час виконання: 4 години
+
+#Lighthouse report
+![Lighthouse](https://github.com/darynakarmazin/ape-nft/raw/main/style/imgages/preview/lighthouse.png)
+
+
+#Екрани
+1. ![Screen](https://github.com/darynakarmazin/ape-nft/raw/main/style/imgages/preview/1.png)
+2. ![Screen](https://github.com/darynakarmazin/ape-nft/raw/main/style/imgages/preview/1.png)
+3. ![Screen](https://github.com/darynakarmazin/ape-nft/raw/main/style/imgages/preview/1.png)
+4. ![Screen](https://github.com/darynakarmazin/ape-nft/raw/main/style/imgages/preview/1.png)
+5. ![Screen](https://github.com/darynakarmazin/ape-nft/raw/main/style/imgages/preview/1.png)
 
 Основні вимоги:
 1) Поєкранний скролл. Дизайн передбачає чітке розділення між екранами (можна
