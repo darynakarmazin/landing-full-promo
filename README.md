@@ -2,6 +2,7 @@
 
 Сторінка лендінгу згідно дизайну
 https://www.figma.com/file/0geHsFE4D2aqKhpQdI6UCa/%D0%A2%D0%97?node-id=0%3A1
+
 Платформа: web mobile
 
 #Lighthouse report
